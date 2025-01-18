@@ -1,7 +1,7 @@
 using UnityEngine;
 
 public class Movement : MonoBehaviour
-
+    
 {
     [SerializeField] private MovementSettings settings;
     // Update viene chiamato una volta per frame
