@@ -5,6 +5,8 @@ public class SpawnFlags : MonoBehaviour
     public GameObject blueFlagPrefab;  // Prefab per la bandierina blu
     public GameObject redFlagPrefab;   // Prefab per la bandierina rossa
     public Transform[] spawnPoints;    // Array dei punti di spawn 
+    [SerializeField] private int amount = 1;
+
 
     void Start()
     {
@@ -44,6 +46,26 @@ public class SpawnFlags : MonoBehaviour
             int randomIndex = Random.Range(i, array.Length);
             array[i] = array[randomIndex];
             array[randomIndex] = temp;
+        }
+    }
+
+
+
+    
+    //se le bandiere collidono con qualcos'altro, aumenta il punteggio e di disattivano
+    private void OnTriggerEnter3D(Collider other)
+    {
+        // ScoreManager manager = other.GetComponent< ScoreManager >();
+        //
+        // if ( manager )
+        // {
+        //     manager.AddScore(amount);
+        // }
+
+        if (other.TryGetComponent(out ScoreManager manager))
+        {
+            manager.AddScore(amount);
+            gameObject.SetActive(false);
         }
     }
 }
