@@ -1,6 +1,7 @@
 using UnityEngine;
 
-public class EnemyPatrol : MonoBehaviour
+[System.Serializable]
+public class EnemyPatrol : EnemyState
 {
     [SerializeField] private float playerSightRadius = 20f;
     [SerializeField] private float flagSightRadius = 5f;
@@ -29,7 +30,9 @@ public class EnemyPatrol : MonoBehaviour
 
     public override void OnUpdate(EnemyController _controller)
     {
-        if (Vector3.Distance(_controller.transform.position, _controller.Agent.destination) < 0.1f)
+        Debug.Log(Vector3.Distance(_controller.transform.position, _controller.Agent.destination));
+
+        if (Vector3.Distance(_controller.transform.position, _controller.Agent.destination) < 1f)
         {
             _currentIndex += 1;
 
@@ -39,6 +42,8 @@ public class EnemyPatrol : MonoBehaviour
             }
 
             _controller.Agent.SetDestination(_controller.PatrolPoints[_currentIndex].position);
+
+            Debug.Log("Sono vivo o anche no");
         }
 
         if (Vector3.Distance(_controller.transform.position, _controller.PlayerTransform.position) < playerSightRadius)

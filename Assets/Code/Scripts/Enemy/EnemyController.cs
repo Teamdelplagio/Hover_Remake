@@ -7,11 +7,16 @@ public class EnemyController : MonoBehaviour
 {
     [field: SerializeField, Header("Patrol Settings")]
     public Transform[] PatrolPoints { get; private set; }
-    [field: SerializeField] public PatrolState PatrolState { get; private set; }
+    [field: SerializeField] public EnemyPatrol PatrolState { get; private set; }
 
     [field: SerializeField, Header("Chase Settings")]
     public Transform PlayerTransform { get; private set; }
-    [field: SerializeField] public ChaseState ChaseState { get; private set; }
+    [field: SerializeField] public EnemyChase ChaseState { get; private set; }
+
+    [field: SerializeField, Header("Flag Settings")] 
+    public Transform[] TakeFlag { get; private set; }
+    [field: SerializeField] public EnemyFlags FlagState { get; private set; }
+
 
     public NavMeshAgent Agent { get; private set; }
 

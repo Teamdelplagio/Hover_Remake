@@ -11,7 +11,3 @@ public abstract class EnemyState
     public abstract void DrawGizmo(EnemyController _controller);
 }
 
-public class PickFlagState
-{
-
-}

@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 1826525216268865847}
   - component: {fileID: 6574310036171981058}
   - component: {fileID: 2063139828151198324}
-  - component: {fileID: 2074531604899200010}
+  - component: {fileID: 4384094155083820589}
   - component: {fileID: 5193633130405600420}
+  - component: {fileID: 2922558533424014970}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -29,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 3491826519457885445}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.5, z: 31}
+  m_LocalPosition: {x: 0, y: 2.5, z: 24}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -88,7 +89,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &2074531604899200010
+--- !u!114 &4384094155083820589
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -97,11 +98,31 @@ MonoBehaviour:
   m_GameObject: {fileID: 3491826519457885445}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49acbafccc31fba44aa45f07726fbb6f, type: 3}
+  m_Script: {fileID: 11500000, guid: 1b9e29b2487b041459de87ad20a1f383, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  NavMeshAgent: {fileID: 5193633130405600420}
+  <PatrolPoints>k__BackingField:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  <PatrolState>k__BackingField:
+    playerSightRadius: 15
+    flagSightRadius: 15
+  <PlayerTransform>k__BackingField: {fileID: 0}
+  <ChaseState>k__BackingField:
+    chaseRadius: 15
+  <TakeFlag>k__BackingField:
+  - {fileID: 0}
+  <FlagState>k__BackingField:
+    flags: []
 --- !u!195 &5193633130405600420
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -112,11 +133,11 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
-  m_Acceleration: 8
+  m_Speed: 9
+  m_Acceleration: 9
   avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 1
+  m_AngularSpeed: 12
+  m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
@@ -124,3 +145,26 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!136 &2922558533424014970
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3491826519457885445}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
