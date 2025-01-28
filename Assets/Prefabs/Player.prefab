@@ -151,7 +151,6 @@ GameObject:
   - component: {fileID: 5481734800557752094}
   - component: {fileID: 848582444736521331}
   - component: {fileID: 1848279144214788339}
-  - component: {fileID: 8213909859575078287}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -291,28 +290,3 @@ MonoBehaviour:
   speed: 9
   turnSpeed: 85
   gravity: 0
---- !u!143 &8213909859575078287
-CharacterController:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8531655172182280442}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Height: 1
-  m_Radius: 0.5
-  m_SlopeLimit: 45
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.08
-  m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}

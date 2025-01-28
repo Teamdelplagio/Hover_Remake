@@ -10,6 +10,11 @@ public class ScoreManager : MonoBehaviour
     {
         score += count;
         spriteUI.UpdateFlags(score);    
-        ui.UpdateText(score);
+        //ui.UpdateText(score);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        Debug.Log(other.gameObject.name);
     }
 }

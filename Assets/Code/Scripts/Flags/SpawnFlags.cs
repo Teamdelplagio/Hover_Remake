@@ -15,7 +15,7 @@ public class SpawnFlags : MonoBehaviour
 
     void SpawnPoints()
     {
-        // Lista per memorizzare i colori delle bandierine
+        // lista per memorizzare i colori delle bandierine
         string[] flags = new string[spawnPoints.Length];
 
         // crea le bandierine
@@ -25,19 +25,19 @@ public class SpawnFlags : MonoBehaviour
             flags[i + 6] = "red";
         }
 
-        // Mischia l'array per una distribuzione casuale
+        // mischia l'array in modo casuale
         Shuffle(flags);
 
-        // Spawn dei punti negli Spawnpoints
+        // spawn dei punti negli Spawnpoints
         for (int i = 0; i < spawnPoints.Length; i++)
         {
-            Transform spawnPoint = spawnPoints[i];  // Ottieni la posizione dello spawn
-            GameObject pointPrefab = flags[i] == "blue" ? blueFlagPrefab : redFlagPrefab;  // Scegli il prefab in base al colore
-            Instantiate(pointPrefab, spawnPoint.position, Quaternion.identity);  // Instanzia il prefab alla posizione dello spawn
+            Transform spawnPoint = spawnPoints[i];  // ottiene la posizione dello spawn
+            GameObject pointPrefab = flags[i] == "blue" ? blueFlagPrefab : redFlagPrefab;  // sceglie il prefab in base al colore
+            Instantiate(pointPrefab, spawnPoint.position, Quaternion.identity);  // crea il prefab nella posizione dello spawn
         }
     }
 
-    // Funzione per mischiare un array
+    // funzione per mischiare un array
     void Shuffle(string[] array)
     {
         for (int i = 0; i < array.Length; i++)
@@ -50,9 +50,9 @@ public class SpawnFlags : MonoBehaviour
     }
 
 
-
     
-    //se le bandiere collidono con qualcos'altro, aumenta il punteggio e di disattivano
+    /*
+    //se le bandiere collidono con qualcos'altro, aumenta il punteggio e si disattivano
     private void OnTriggerEnter3D(Collider other)
     {
         // ScoreManager manager = other.GetComponent< ScoreManager >();
@@ -67,5 +67,5 @@ public class SpawnFlags : MonoBehaviour
             manager.AddScore(amount);
             gameObject.SetActive(false);
         }
-    }
+    }*/
 }
