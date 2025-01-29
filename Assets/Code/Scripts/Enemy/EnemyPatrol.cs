@@ -42,8 +42,6 @@ public class EnemyPatrol : EnemyState
             }
 
             _controller.Agent.SetDestination(_controller.PatrolPoints[_currentIndex].position);
-
-            Debug.Log("Sono vivo o anche no");
         }
 
         if (Vector3.Distance(_controller.transform.position, _controller.PlayerTransform.position) < playerSightRadius)
