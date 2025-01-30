@@ -417,7 +417,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteUI: {fileID: 1465352718}
-  ui: {fileID: 0}
   score: 0
 --- !u!4 &326075215 stripped
 Transform:
@@ -713,7 +712,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -803,6 +802,23 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1588897644252091370, guid: 83d5593691a560245843c343b85b9b42, type: 3}
   m_PrefabInstance: {fileID: 1500501663}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &519401247 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2536763495378302781, guid: 3cbcadb8e34bd264cb12967e9327b043, type: 3}
+  m_PrefabInstance: {fileID: 2144863130}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &519401252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519401247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d93761325cb24e341aa13d294021086f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &594494617
 GameObject:
   m_ObjectHideFlags: 0
@@ -3705,6 +3721,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3624051084673122718, guid: 3cbcadb8e34bd264cb12967e9327b043, type: 3}
       insertIndex: 3
       addedObject: {fileID: 294874217}
+    - targetCorrespondingSourceObject: {fileID: 2536763495378302781, guid: 3cbcadb8e34bd264cb12967e9327b043, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 519401252}
   m_SourcePrefab: {fileID: 100100000, guid: 3cbcadb8e34bd264cb12967e9327b043, type: 3}
 --- !u!1001 &3130995202315342310
 PrefabInstance:

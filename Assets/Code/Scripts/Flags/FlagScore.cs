@@ -8,14 +8,6 @@ public class FlagScore : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
 
-         
-        // ScoreManager manager = other.GetComponent< ScoreManager >();
-        //
-        // if ( manager )
-        // {
-        //     manager.AddScore(amount);RC
-        // }
-
         if (other.TryGetComponent(out ScoreManager manager))
         {
             manager.AddScore(amount);

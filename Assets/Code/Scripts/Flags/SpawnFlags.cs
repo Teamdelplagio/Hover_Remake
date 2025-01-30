@@ -49,23 +49,4 @@ public class SpawnFlags : MonoBehaviour
         }
     }
 
-
-    
-    /*
-    //se le bandiere collidono con qualcos'altro, aumenta il punteggio e si disattivano
-    private void OnTriggerEnter3D(Collider other)
-    {
-        // ScoreManager manager = other.GetComponent< ScoreManager >();
-        //
-        // if ( manager )
-        // {
-        //     manager.AddScore(amount);
-        // }
-
-        if (other.TryGetComponent(out ScoreManager manager))
-        {
-            manager.AddScore(amount);
-            gameObject.SetActive(false);
-        }
-    }*/
 }

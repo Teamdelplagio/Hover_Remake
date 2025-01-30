@@ -4,7 +4,8 @@ using UnityEngine.UI;
 public class ScoreSpriteUi : MonoBehaviour
 {
     [SerializeField] private Image[] flags;
-
+    
+    //gestisce il punteggio
     private void Start()
     {
         foreach (var flag in flags)
