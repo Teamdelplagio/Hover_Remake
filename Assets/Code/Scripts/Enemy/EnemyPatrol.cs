@@ -25,13 +25,11 @@ public class EnemyPatrol : EnemyState
             }
         }
 
-        _controller.Agent.SetDestination(_controller.PatrolPoints[_currentIndex].position);
+        //_controller.Agent.SetDestination(_controller.PatrolPoints[_currentIndex].position);
     }
 
     public override void OnUpdate(EnemyController _controller)
     {
-        Debug.Log(Vector3.Distance(_controller.transform.position, _controller.Agent.destination));
-
         if (Vector3.Distance(_controller.transform.position, _controller.Agent.destination) < 1f)
         {
             _currentIndex += 1;
@@ -48,8 +46,29 @@ public class EnemyPatrol : EnemyState
         {
             _controller.SetState(_controller.ChaseState);
         }
-    }
 
+        //if (Vector3.Distance(_controller.transform.position, _controller.TakeFlag[0].position) < playerSightRadius)
+        //{
+        //    _controller.SetState(_controller.FlagState);
+        //}
+
+        // Se una bandiera è nel raggio di visibilità, passa allo stato FlagState
+        for (int i = 0; i < _controller.TakeFlag.Length; i++)
+        {
+            if (_controller.TakeFlag[i] != null)
+            {
+                float distanceToFlag = Vector3.Distance(_controller.transform.position, _controller.TakeFlag[i].position);
+
+                if (distanceToFlag <= flagSightRadius)
+                {
+                    // Passa allo stato FlagState se una bandiera è nel raggio di visibilità
+                    Debug.Log("Bandiera nel raggio di visibilità, passo a FlagState.");
+                    _controller.SetState(_controller.FlagState);
+                    return; // Evita di continuare l'aggiornamento in ChaseState
+                }
+            }
+        }
+    }
     public override void OnExit(EnemyController _controller)
     {
     }

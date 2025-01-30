@@ -1,0 +1,22 @@
+using UnityEngine;
+
+public class FlagScore_E : MonoBehaviour
+{
+    [SerializeField] private int amount = 1;
+
+    //se le bandiere collidono con qualcos'altro, aumenta il punteggio e si disattivano
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Enemy"))
+        {
+            // Try to get the ScoreManager component from the other object
+            ScoreManager manager = other.GetComponent<ScoreManager>();
+
+            if (manager != null)
+            {
+                manager.AddScore(amount);  // Add the score
+                gameObject.SetActive(false);  // Deactivate the flag
+            }
+        }
+    }
+}

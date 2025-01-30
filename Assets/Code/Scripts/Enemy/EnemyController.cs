@@ -13,7 +13,7 @@ public class EnemyController : MonoBehaviour
     public Transform PlayerTransform { get; private set; }
     [field: SerializeField] public EnemyChase ChaseState { get; private set; }
 
-    [field: SerializeField, Header("Flag Settings")] 
+    [field: SerializeField, Header("Flag Settings")]
     public Transform[] TakeFlag { get; private set; }
     [field: SerializeField] public EnemyFlags FlagState { get; private set; }
 
