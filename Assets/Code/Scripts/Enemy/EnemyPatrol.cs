@@ -4,7 +4,6 @@ using UnityEngine;
 public class EnemyPatrol : EnemyState
 {
     [SerializeField] private float playerSightRadius = 20f;
-    [SerializeField] private float flagSightRadius = 5f;
 
     private int _currentIndex = 0;
 
@@ -25,7 +24,7 @@ public class EnemyPatrol : EnemyState
             }
         }
 
-        //_controller.Agent.SetDestination(_controller.PatrolPoints[_currentIndex].position);
+        _controller.Agent.SetDestination(_controller.PatrolPoints[_currentIndex].position);
     }
 
     public override void OnUpdate(EnemyController _controller)
@@ -47,26 +46,10 @@ public class EnemyPatrol : EnemyState
             _controller.SetState(_controller.ChaseState);
         }
 
-        //if (Vector3.Distance(_controller.transform.position, _controller.TakeFlag[0].position) < playerSightRadius)
-        //{
-        //    _controller.SetState(_controller.FlagState);
-        //}
-
-        // Se una bandiera è nel raggio di visibilità, passa allo stato FlagState
-        for (int i = 0; i < _controller.TakeFlag.Length; i++)
+        if (Vector3.Distance(_controller.transform.position, _controller.FlagsTransform[0].position) < playerSightRadius)
         {
-            if (_controller.TakeFlag[i] != null)
-            {
-                float distanceToFlag = Vector3.Distance(_controller.transform.position, _controller.TakeFlag[i].position);
-
-                if (distanceToFlag <= flagSightRadius)
-                {
-                    // Passa allo stato FlagState se una bandiera è nel raggio di visibilità
-                    Debug.Log("Bandiera nel raggio di visibilità, passo a FlagState.");
-                    _controller.SetState(_controller.FlagState);
-                    return; // Evita di continuare l'aggiornamento in ChaseState
-                }
-            }
+            Debug.Log("Bandiera nel raggio di visibilità, passo a FlagState.");
+            _controller.SetState(_controller.FlagState);
         }
     }
     public override void OnExit(EnemyController _controller)
@@ -81,8 +64,5 @@ public class EnemyPatrol : EnemyState
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(_controller.transform.position, playerSightRadius);
-
-        Gizmos.color = Color.magenta;
-        Gizmos.DrawWireSphere(_controller.transform.position, flagSightRadius);
     }
 }

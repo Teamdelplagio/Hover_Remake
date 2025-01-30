@@ -728,7 +728,7 @@ GameObject:
   - component: {fileID: 387462033}
   - component: {fileID: 387462035}
   - component: {fileID: 387462034}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Bandiera_R_Piena (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -905,7 +905,7 @@ GameObject:
   - component: {fileID: 628501135}
   m_Layer: 0
   m_Name: spawnpoint (6)
-  m_TagString: Untagged
+  m_TagString: Flags
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -996,7 +996,6 @@ MonoBehaviour:
   - {fileID: 1712148727}
   - {fileID: 1196907736}
   - {fileID: 2012267034}
-  amount: 1
 --- !u!4 &682775771 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1639261152136723999, guid: 8faf8dd8184f7ca4198f065cecf82096, type: 3}
@@ -1013,7 +1012,7 @@ GameObject:
   - component: {fileID: 690719629}
   m_Layer: 0
   m_Name: spawnpoint (8)
-  m_TagString: Untagged
+  m_TagString: Flags
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1044,7 +1043,7 @@ GameObject:
   - component: {fileID: 703611959}
   m_Layer: 0
   m_Name: spawnpoint (5)
-  m_TagString: Untagged
+  m_TagString: Flags
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1080,7 +1079,7 @@ GameObject:
   - component: {fileID: 801546854}
   - component: {fileID: 801546856}
   - component: {fileID: 801546855}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Bandiera_R_Piena (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1299,7 +1298,7 @@ GameObject:
   - component: {fileID: 898341219}
   - component: {fileID: 898341221}
   - component: {fileID: 898341220}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Bandiera_R_Piena (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1454,7 +1453,7 @@ GameObject:
   - component: {fileID: 1129320408}
   m_Layer: 0
   m_Name: spawnpoint (2)
-  m_TagString: Untagged
+  m_TagString: Flags
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1582,7 +1581,7 @@ GameObject:
   - component: {fileID: 1196907736}
   m_Layer: 0
   m_Name: spawnpoint (10)
-  m_TagString: Untagged
+  m_TagString: Flags
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1688,7 +1687,7 @@ GameObject:
   - component: {fileID: 1291704713}
   - component: {fileID: 1291704715}
   - component: {fileID: 1291704714}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Bandiera_R_Piena (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1995,7 +1994,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1465352717}
-  - component: {fileID: 1465352719}
   - component: {fileID: 1465352718}
   m_Layer: 0
   m_Name: FlagsHolder
@@ -2048,32 +2046,6 @@ MonoBehaviour:
   - {fileID: 1838019955}
   - {fileID: 822562866}
   - {fileID: 1806102918}
---- !u!114 &1465352719
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1465352716}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Padding:
-    m_Left: 0
-    m_Right: 0
-    m_Top: 0
-    m_Bottom: 0
-  m_ChildAlignment: 3
-  m_Spacing: 0
-  m_ChildForceExpandWidth: 0
-  m_ChildForceExpandHeight: 0
-  m_ChildControlWidth: 0
-  m_ChildControlHeight: 0
-  m_ChildScaleWidth: 0
-  m_ChildScaleHeight: 0
-  m_ReverseArrangement: 0
 --- !u!1 &1474723327
 GameObject:
   m_ObjectHideFlags: 0
@@ -2085,7 +2057,7 @@ GameObject:
   - component: {fileID: 1474723328}
   m_Layer: 0
   m_Name: spawnpoint (3)
-  m_TagString: Untagged
+  m_TagString: Flags
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2116,7 +2088,7 @@ GameObject:
   - component: {fileID: 1480221883}
   m_Layer: 0
   m_Name: spawnpoint (7)
-  m_TagString: Untagged
+  m_TagString: Flags
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2178,11 +2150,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3428517460476816245, guid: 83d5593691a560245843c343b85b9b42, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -17.6
+      value: -13.6
       objectReference: {fileID: 0}
     - target: {fileID: 3428517460476816245, guid: 83d5593691a560245843c343b85b9b42, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 29
+      value: 26.5
       objectReference: {fileID: 0}
     - target: {fileID: 3451491661727128717, guid: 83d5593691a560245843c343b85b9b42, type: 3}
       propertyPath: m_LocalScale.x
@@ -2242,23 +2214,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4129516458964287180, guid: 83d5593691a560245843c343b85b9b42, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -62.800003
+      value: -63.800003
       objectReference: {fileID: 0}
     - target: {fileID: 4129516458964287180, guid: 83d5593691a560245843c343b85b9b42, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -25.7
+      value: -22.7
       objectReference: {fileID: 0}
     - target: {fileID: 4355256860094693618, guid: 83d5593691a560245843c343b85b9b42, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 23.5
       objectReference: {fileID: 0}
     - target: {fileID: 4355256860094693618, guid: 83d5593691a560245843c343b85b9b42, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -13
+      value: -48
       objectReference: {fileID: 0}
     - target: {fileID: 4604206650113917858, guid: 83d5593691a560245843c343b85b9b42, type: 3}
       propertyPath: m_Name
       value: PatrolPoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 4604206650113917858, guid: 83d5593691a560245843c343b85b9b42, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4863341109706933970, guid: 83d5593691a560245843c343b85b9b42, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2278,19 +2254,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7487950482133250808, guid: 83d5593691a560245843c343b85b9b42, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -65.1
+      value: -69.1
       objectReference: {fileID: 0}
     - target: {fileID: 7487950482133250808, guid: 83d5593691a560245843c343b85b9b42, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.2
+      value: -6.7
       objectReference: {fileID: 0}
     - target: {fileID: 8715838060259992409, guid: 83d5593691a560245843c343b85b9b42, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -43.2
+      value: -39.2
       objectReference: {fileID: 0}
     - target: {fileID: 8715838060259992409, guid: 83d5593691a560245843c343b85b9b42, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -59
+      value: -62.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2398,7 +2374,7 @@ GameObject:
   - component: {fileID: 1559420272}
   m_Layer: 0
   m_Name: spawnpoint (4)
-  m_TagString: Untagged
+  m_TagString: Flags
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2435,7 +2411,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b278646154af1fd488016c7bdeb70f0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteUI: {fileID: 1465352718}
+  spriteUI: {fileID: 1766448276}
   score: 0
 --- !u!1 &1585352337
 GameObject:
@@ -2528,7 +2504,7 @@ GameObject:
   - component: {fileID: 1712148727}
   m_Layer: 0
   m_Name: spawnpoint (9)
-  m_TagString: Untagged
+  m_TagString: Flags
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2709,7 +2685,7 @@ GameObject:
   - component: {fileID: 1747595904}
   m_Layer: 0
   m_Name: spawnpoint (1)
-  m_TagString: Untagged
+  m_TagString: Flags
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2743,8 +2719,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1766448274}
-  - component: {fileID: 1766448275}
-  m_Layer: 5
+  - component: {fileID: 1766448276}
+  m_Layer: 0
   m_Name: FlagsHolder_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2776,7 +2752,7 @@ RectTransform:
   m_AnchoredPosition: {x: 225, y: -165}
   m_SizeDelta: {x: 500, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1766448275
+--- !u!114 &1766448276
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2785,7 +2761,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1766448273}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 562f999fd18c8604e931cb8ed151b9e0, type: 3}
+  m_Script: {fileID: 11500000, guid: 4bc4662f95f21f3498cf8825c1854aa4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   flags:
@@ -3186,7 +3162,7 @@ GameObject:
   - component: {fileID: 1938201871}
   - component: {fileID: 1938201873}
   - component: {fileID: 1938201872}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Bandiera_R_Piena
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3293,7 +3269,7 @@ GameObject:
   - component: {fileID: 1988597426}
   m_Layer: 0
   m_Name: spawnpoint
-  m_TagString: Untagged
+  m_TagString: Flags
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3324,7 +3300,7 @@ GameObject:
   - component: {fileID: 2012267034}
   m_Layer: 0
   m_Name: spawnpoint (11)
-  m_TagString: Untagged
+  m_TagString: Flags
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3504,7 +3480,7 @@ GameObject:
   - component: {fileID: 2106030469}
   - component: {fileID: 2106030471}
   - component: {fileID: 2106030470}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Bandiera_R_Piena (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3795,16 +3771,20 @@ PrefabInstance:
       objectReference: {fileID: 294874216}
     - target: {fileID: 3209638172842175125, guid: e21736cf924aa654eb30d3e68d8fa654, type: 3}
       propertyPath: <TakeFlag>k__BackingField.Array.size
-      value: 1
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 3209638172842175125, guid: e21736cf924aa654eb30d3e68d8fa654, type: 3}
+      propertyPath: <FlagState>k__BackingField.flagRadius
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 3209638172842175125, guid: e21736cf924aa654eb30d3e68d8fa654, type: 3}
       propertyPath: <ChaseState>k__BackingField.chaseRadius
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 3209638172842175125, guid: e21736cf924aa654eb30d3e68d8fa654, type: 3}
       propertyPath: '<TakeFlag>k__BackingField.Array.data[0]'
       value: 
-      objectReference: {fileID: 7278740466220968842, guid: 20c71060698aab441aeb2e0ac4cdc10d, type: 3}
+      objectReference: {fileID: 1988597426}
     - target: {fileID: 3209638172842175125, guid: e21736cf924aa654eb30d3e68d8fa654, type: 3}
       propertyPath: '<TakeFlag>k__BackingField.Array.data[1]'
       value: 
@@ -3853,6 +3833,10 @@ PrefabInstance:
       propertyPath: '<TakeFlag>k__BackingField.Array.data[11]'
       value: 
       objectReference: {fileID: 2012267034}
+    - target: {fileID: 3209638172842175125, guid: e21736cf924aa654eb30d3e68d8fa654, type: 3}
+      propertyPath: <FlagsTransform>k__BackingField.Array.size
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 3209638172842175125, guid: e21736cf924aa654eb30d3e68d8fa654, type: 3}
       propertyPath: '<PatrolPoints>k__BackingField.Array.data[0]'
       value: 
@@ -3922,8 +3906,56 @@ PrefabInstance:
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 3209638172842175125, guid: e21736cf924aa654eb30d3e68d8fa654, type: 3}
+      propertyPath: '<FlagsTransform>k__BackingField.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1988597426}
+    - target: {fileID: 3209638172842175125, guid: e21736cf924aa654eb30d3e68d8fa654, type: 3}
+      propertyPath: '<FlagsTransform>k__BackingField.Array.data[1]'
+      value: 
+      objectReference: {fileID: 1747595904}
+    - target: {fileID: 3209638172842175125, guid: e21736cf924aa654eb30d3e68d8fa654, type: 3}
+      propertyPath: '<FlagsTransform>k__BackingField.Array.data[2]'
+      value: 
+      objectReference: {fileID: 1129320408}
+    - target: {fileID: 3209638172842175125, guid: e21736cf924aa654eb30d3e68d8fa654, type: 3}
+      propertyPath: '<FlagsTransform>k__BackingField.Array.data[3]'
+      value: 
+      objectReference: {fileID: 1474723328}
+    - target: {fileID: 3209638172842175125, guid: e21736cf924aa654eb30d3e68d8fa654, type: 3}
+      propertyPath: '<FlagsTransform>k__BackingField.Array.data[4]'
+      value: 
+      objectReference: {fileID: 1559420272}
+    - target: {fileID: 3209638172842175125, guid: e21736cf924aa654eb30d3e68d8fa654, type: 3}
+      propertyPath: '<FlagsTransform>k__BackingField.Array.data[5]'
+      value: 
+      objectReference: {fileID: 703611959}
+    - target: {fileID: 3209638172842175125, guid: e21736cf924aa654eb30d3e68d8fa654, type: 3}
+      propertyPath: '<FlagsTransform>k__BackingField.Array.data[6]'
+      value: 
+      objectReference: {fileID: 628501135}
+    - target: {fileID: 3209638172842175125, guid: e21736cf924aa654eb30d3e68d8fa654, type: 3}
+      propertyPath: '<FlagsTransform>k__BackingField.Array.data[7]'
+      value: 
+      objectReference: {fileID: 1480221883}
+    - target: {fileID: 3209638172842175125, guid: e21736cf924aa654eb30d3e68d8fa654, type: 3}
+      propertyPath: '<FlagsTransform>k__BackingField.Array.data[8]'
+      value: 
+      objectReference: {fileID: 690719629}
+    - target: {fileID: 3209638172842175125, guid: e21736cf924aa654eb30d3e68d8fa654, type: 3}
+      propertyPath: '<FlagsTransform>k__BackingField.Array.data[9]'
+      value: 
+      objectReference: {fileID: 1712148727}
+    - target: {fileID: 3209638172842175125, guid: e21736cf924aa654eb30d3e68d8fa654, type: 3}
+      propertyPath: '<FlagsTransform>k__BackingField.Array.data[10]'
+      value: 
+      objectReference: {fileID: 1196907736}
+    - target: {fileID: 3209638172842175125, guid: e21736cf924aa654eb30d3e68d8fa654, type: 3}
+      propertyPath: '<FlagsTransform>k__BackingField.Array.data[11]'
+      value: 
+      objectReference: {fileID: 2012267034}
+    - target: {fileID: 3209638172842175125, guid: e21736cf924aa654eb30d3e68d8fa654, type: 3}
       propertyPath: <PatrolState>k__BackingField.playerSightRadius
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 4777352953571993620, guid: e21736cf924aa654eb30d3e68d8fa654, type: 3}
       propertyPath: m_AutoRepath

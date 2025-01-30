@@ -5,7 +5,7 @@ public class SpawnFlags : MonoBehaviour
     public GameObject blueFlagPrefab;  // Prefab per la bandierina blu
     public GameObject redFlagPrefab;   // Prefab per la bandierina rossa
     public Transform[] spawnPoints;    // Array dei punti di spawn 
-    [SerializeField] private int amount = 1;
+    //[SerializeField] private int amount = 1;
 
 
     void Start()

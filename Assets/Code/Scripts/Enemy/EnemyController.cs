@@ -14,7 +14,7 @@ public class EnemyController : MonoBehaviour
     [field: SerializeField] public EnemyChase ChaseState { get; private set; }
 
     [field: SerializeField, Header("Flag Settings")]
-    public Transform[] TakeFlag { get; private set; }
+    public Transform[] FlagsTransform { get; private set; }
     [field: SerializeField] public EnemyFlags FlagState { get; private set; }
 
 

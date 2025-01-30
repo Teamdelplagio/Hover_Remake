@@ -29,11 +29,6 @@ public class EnemyChase : EnemyState
     public override void OnCollision(EnemyController _controller, Collider _collision)
     {
         EnemyController enemyController = _collision.GetComponent<EnemyController>();
-
-        //if (enemyController)
-        //{
-        //    Debug.Log("Collided with player!");
-        //}
     }
 
     public override void DrawGizmo(EnemyController _controller)
