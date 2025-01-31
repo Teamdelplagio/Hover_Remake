@@ -46,11 +46,11 @@ public class EnemyPatrol : EnemyState
             _controller.SetState(_controller.ChaseState);
         }
 
-        if (Vector3.Distance(_controller.transform.position, _controller.FlagsTransform[0].position) < playerSightRadius)
-        {
-            Debug.Log("Bandiera nel raggio di visibilità, passo a FlagState.");
-            _controller.SetState(_controller.FlagState);
-        }
+        //if (Vector3.Distance(_controller.transform.position, _controller.FlagsTransform[0].position) < playerSightRadius)
+        //{
+        //    Debug.Log("Bandiera nel raggio di visibilità, passo a FlagState.");
+        //    _controller.SetState(_controller.FlagState);
+        //}
     }
     public override void OnExit(EnemyController _controller)
     {
