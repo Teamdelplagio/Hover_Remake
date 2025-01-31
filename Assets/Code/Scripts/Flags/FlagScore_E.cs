@@ -10,7 +10,7 @@ public class FlagScore_E : MonoBehaviour
         if (other.CompareTag("Enemy"))
         {
             // Try to get the ScoreManager component from the other object
-            ScoreManager manager = other.GetComponent<ScoreManager>();
+            ScoreManager_E manager = other.GetComponent<ScoreManager_E>();
 
             if (manager != null)
             {
