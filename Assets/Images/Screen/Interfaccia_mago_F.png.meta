@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f79ca17f8ed0df848a06b5e6c341e13b
+guid: bc7c2e6985314264a9b93db2b0c66856
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Interfaccia_mago_Hover_0
+      name: Interfaccia_mago_F_0
       rect:
         serializedVersion: 2
         x: 0
@@ -125,8 +125,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e0cf68b58618bcf48a84944cf68581b0
-      internalID: -1600685703
+      spriteID: 93e8f6c845c90824bba65e0021da9054
+      internalID: 1132204700
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: f72916a7ab8df0e45ad7bda4352def80
+    spriteID: d29fed68cfb032149aff9c1382adfed3
     internalID: 0
     vertices: []
     indices: 
@@ -145,7 +145,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Interfaccia_mago_Hover_0: -1600685703
+      Interfaccia_mago_F_0: 1132204700
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

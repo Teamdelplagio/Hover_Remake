@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ScoreManager : MonoBehaviour
 {
@@ -11,6 +12,12 @@ public class ScoreManager : MonoBehaviour
         score += count;
         spriteUI.UpdateFlags(score);    
         //ui.UpdateText(score);
+        if (score >= 6) 
+        {
+            //PlayAgain playAgain = new PlayAgain();
+            //playAgain.gameObject.SetActive(true);
+            SceneManager.LoadScene(2);
+        }
     }
 
     private void OnTriggerEnter(Collider other)
