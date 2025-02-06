@@ -11825,6 +11825,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -0
       objectReference: {fileID: 0}
+    - target: {fileID: 4226890906259943237, guid: 764bf590ef227554286fa8f68e3ddfd6, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: e94c1a51a89759a4485d9c1a130bb110, type: 2}
     - target: {fileID: 5516434142784538642, guid: 764bf590ef227554286fa8f68e3ddfd6, type: 3}
       propertyPath: m_CastShadows
       value: 0
@@ -12873,7 +12877,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1060390227}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 85f3665efc2136e4393f8b71e2b2945a, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -12886,9 +12890,9 @@ CapsuleCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
-  m_Height: 2
+  m_Height: 2.0705404
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: -0.035270244, z: 0}
 --- !u!54 &1060390229
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12915,7 +12919,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 116
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!114 &1060390230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13612,7 +13616,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.33333334
   m_MinRegionArea: 2
-  m_NavMeshData: {fileID: 23800000, guid: 203bdf2c98248d4479cc1486f97eb443, type: 2}
+  m_NavMeshData: {fileID: 0}
   m_BuildHeightMesh: 0
 --- !u!4 &1141408481 stripped
 Transform:
